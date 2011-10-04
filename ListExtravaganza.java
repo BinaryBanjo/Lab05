@@ -22,8 +22,9 @@ public class ListExtravaganza
       listInteger.add(inputInt);
    }
    
-   public Integer get(int index)
+   public Integer getInt(int index)
    {
-      return listInteger.get(index);
+      return -6;
+      //return listInteger.get(index);
    }
 }
