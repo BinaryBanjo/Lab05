@@ -2,8 +2,8 @@ import java.util.ArrayList;
 
 public class ListExtravaganza
 {
-   ArrayList<Integer> listInteger;
-   ArrayList<Double> listDouble;
-   ArrayList<Boolean> listBoolean;
-   ArrayList<String> listString;   
+   private ArrayList<Integer> listInteger;
+   private ArrayList<Double> listDouble;
+   private ArrayList<Boolean> listBoolean;
+   private ArrayList<String> listString;   
 }
