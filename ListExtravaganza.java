@@ -24,7 +24,11 @@ public class ListExtravaganza
    
    public Integer getInt(int index)
    {
-      return -6;
-      //return listInteger.get(index);
+      return listInteger.get(index);
+   }
+   
+   public int sizeInt()
+   {
+      return 5;
    }
 }
