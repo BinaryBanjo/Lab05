@@ -21,4 +21,9 @@ public class ListExtravaganza
    {
       listInteger.add(inputInt);
    }
+   
+   public Integer get(int index)
+   {
+      return listInteger.get(index);
+   }
 }
