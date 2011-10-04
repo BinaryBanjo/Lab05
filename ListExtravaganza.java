@@ -16,4 +16,9 @@ public class ListExtravaganza
       listString = new ArrayList<String>();   
       
    }
+   
+   public void add (Integer inputInt)
+   {
+      listInteger.add(inputInt);
+   }
 }
