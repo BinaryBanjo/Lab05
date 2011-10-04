@@ -29,6 +29,7 @@ public class ListExtravaganza
    
    public int sizeInt()
    {
-      return 5;
+      return listInteger.size();
    }
+   
 }
