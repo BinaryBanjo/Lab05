@@ -1,0 +1,52 @@
+CPE 102 Lab 5 - ArrayList class and wrapper classes in the Java Standard Library
+
+
+Due Date and Submission Instructions
+
+On vogon and using handin (see How To Use handin, as necessary) hand in the following file(s) as specified:
+
+    File(s): The two source files you are required to write for this lab - the names are up to you!
+
+    touser: graderkm
+
+    subdirectory: 102Lab05 (by 9:00pm Thursday 10/6)
+
+Goals:
+
+    * To become familiar with the ArrayList class and some of its basic methods.
+    * To understand what wrapper classes are and how they can be used.
+    * To get more practice with the Scanner class, this time using it to parse String objects instead of reading from System.in.
+    * To learn how to write overloadded method, i.e., methods with the same name but different parameter types.
+    * To get a little exposure to generics in Java.
+
+Orientation:
+
+You are going to write a simple class, name of your choice, that allows a user of the class to store int, double, boolean, and String values in separate ArrayLists and retrieve information about what it contains. Your class you will allow values to be added via overloaded methods that accept the primitive data types or a String and will store them in the appropriate private ArrayList.
+
+Specification:
+
+   1. Review, as necessary, the Java Standard Library documentation for the ArrayList, Scanner, Integer, Double, Boolean, and String classes.
+   2.
+
+      Pick a name for your class, something that captures its intended use (see Orientation above).
+   3. Define four private instance variables of type ArrayList. Remember that the ArrayList class is a generic class - this means you must specify the type of objects you are going to store in it. Use the classes Integer, Double, Boolean, and String as the generic types. Here is an example of declaring and constructing a private ArrayList that holds String objects:
+
+        private ArrayList<String> myList = new ArrayList<String>();
+
+   4.
+
+      Write any constructors you deem necessary to your design.
+   5. Now write the overloaded add methods (methods with the same name but different parameters), one that has an int parameter, one that has a double parameter, one that has a boolean parameter, and one that has a String parameter. All of the add methods should have a void return type.  Each should add the value passed in to its associated generic ArrayList. Because of Java's automatic boxing and unboxing of primitive data types this should be relatively easy but remember that the primitive types can't actually be stored directly in the ArrayList and the the wrapper classes are involved even though the code does not use them explicitly (though it may - give it a try later). I would suggest writing one at a time and test it before writing the next. To test you will need to write the associated accessor method (a method that lets you access private information contained by a class) specified below.
+   6.
+
+      Write a method called minimumInt that has no parameters and returns the minimum integer value that has been added to your class, or zero if none has been added. You will have to write logic to search through the ArrayList of int values and find the minimum value.
+   7. Write a method called averageDouble that has no parameters and returns the average of all the double values that have been added to your class, or zero if none have been added. You will have to write logic to compute the average of all double values in the ArrayList of doubles.
+   8.
+
+      Write a method called numberOfTrues that has no parameters and returns the number of true values that have been added to your class, or zero if none have been added. You will have to write logic to count the number of true values in the ArrayList of booleans.
+   9. Write a method called numberOfStrings that has no parameters and returns the number of String objects that have been added to your class, or zero if none have been added. You will have to write logic to count the number of String objects in the ArrayList of String objects.
+  10.
+
+      When you believe your class is correct and complete, write a driver class (a class with a main) in a separate file that has a loop that prompts a user to enter a value. Use the Scanner class (as you did in an earlier lab) to determine the type of the user input and which add method should be called. This loop should repeat until the user types "quit", then it should stop the loop without adding the "quit" string. Remember: to compare two object's values for equality you must use their .equals method not the == operator (which only compares the address contained by the references)! Before exiting, the program should print out the minimum int, average double, number of trues, and number of Strings just entered.
+
+
