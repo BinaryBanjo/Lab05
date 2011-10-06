@@ -8,6 +8,7 @@ public class ListExtravaganza
    private ArrayList<Double> listDouble;
    private ArrayList<Boolean> listBoolean;
    private ArrayList<String> listString;   
+   private int total;
    
    public ListExtravaganza()
    {
@@ -18,14 +19,14 @@ public class ListExtravaganza
       listBoolean = new ArrayList<Boolean>();
       listString = new ArrayList<String>();   
       
-     /* boolean cont = true;
+      total = 0;      
+      boolean cont = true;
       String placeHolder = "";
       
+      System.out.println("\nPlease enter some integers, "
+            + "booleans, doubles, and/or Strings:  ");
       while ((cont))
-      {
-         System.out.println("\nPlease enter an integer, "
-                   + "boolean, double, or String:  ");
-         
+      {         
          if(in.hasNextInt())
          {
             add(in.nextInt());
@@ -38,24 +39,69 @@ public class ListExtravaganza
             {
                cont = false;
             }
+            
+         }//end else for Strings
+         
+         if (cont)
+         {
+            total++;
          }
       }//end while ((cont)) 
-     */
+     
    }//end constructor
-   
+ 
+   /**
+    * add methods
+    */  
+    
    public void add (Integer inputInt)
    {
       listInteger.add(inputInt);
    }
    
+   /**
+    * get methods
+    */
+    
    public Integer getInt(int index)
    {
       return listInteger.get(index);
    }
    
+   public Double getDouble(int index)
+   {
+      return listDouble.get(index);
+   }
+   
+   public Boolean getBoolean (int index)
+   {
+      return listBoolean.get(index);
+   }
+   
+   public String getString (int index)
+   {
+      return listString.get(index);
+   }
+
+   public int getTotal()
+   {
+      return total;
+   }
+
+   /**
+    * size methods
+    */
+
    public int sizeInt()
    {
       return listInteger.size();
    }
+   
+   public int sizeDouble()
+   {
+      return listDouble.size();
+   }
+   
+   
    
 }//end ListExtravaganza

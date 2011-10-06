@@ -2,20 +2,47 @@ public class ListExtravaganzaDriver
 {
    public static void main (String[] args)
    {   
-      testAddInteger();
+      //testAddInteger();
       testConstructor(); 
    }
    
    public static void testConstructor()
    {
       ListExtravaganza myList = new ListExtravaganza();
-      if (myList.sizeInt() == 0)
-      {}
+      int total = myList.sizeInt(); /** + myList.sizeDouble()
+                + myList.sizeBoolean() + myList.sizeString();
+      */
+      /**
+       * Test to see if created arrays whose total values 
+       * are equal to the total entered
+       */
+      
+      if (total == myList.getTotal())
+      {
+      }
       else
       {
-         System.out.println("Error in testConstructor Int: "
-               + "\nExpected: " + 0 + "\nReceived: " + myList.sizeInt());
+         System.out.println("Error in testConstructor: "
+         + "\nExpected: " + total + "\nReceived: " + myList.getTotal());
+         
       }
+       
+      
+
+      /**
+       * Tests to see if constructor made an empty ArrayList<Double>
+       */
+
+      if (myList.sizeDouble() == 0)
+      {
+      }
+      else
+      {
+         System.out.println("Error in testConstructor Double: "
+               + "\nExpected: " + 0 + "\nReceived: " + myList.sizeDouble());
+      }
+      
+      
    }
    public static void testAddInteger()
    {
