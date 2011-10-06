@@ -9,9 +9,9 @@ public class ListExtravaganzaDriver
    public static void testConstructor()
    {
       ListExtravaganza myList = new ListExtravaganza();
-      int total = myList.sizeInt(); /** + myList.sizeDouble()
-                + myList.sizeBoolean() + myList.sizeString();
-      */
+      int total = myList.sizeInt() /** + myList.sizeDouble()
+                + myList.sizeBoolean()*/ + myList.sizeString();
+      
       /**
        * Test to see if created arrays whose total values 
        * are equal to the total entered

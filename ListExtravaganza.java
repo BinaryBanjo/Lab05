@@ -39,6 +39,10 @@ public class ListExtravaganza
             {
                cont = false;
             }
+            else
+            {
+               listString.add(placeHolder);
+            }
             
          }//end else for Strings
          
@@ -57,6 +61,11 @@ public class ListExtravaganza
    public void add (Integer inputInt)
    {
       listInteger.add(inputInt);
+   }
+   
+   public void add (String inputString)
+   {
+      listString.add(inputString);
    }
    
    /**
@@ -100,6 +109,11 @@ public class ListExtravaganza
    public int sizeDouble()
    {
       return listDouble.size();
+   }
+   
+   public int sizeString()
+   {
+      return listString.size();
    }
    
    
